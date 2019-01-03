@@ -1,4 +1,4 @@
-# 3dcart Premium Theme: cheapest-tickets-hub-core
+# 3dcart Free Theme: cheapest-tickets-hub-core
 
 ## Installation
 
@@ -12,4 +12,4 @@ Refer to the following article for further installation instructions: https://su
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
 
-Refer to the following guide for further assistance with 3dcart's template structure: https://core.3dcart.com
+Refer to the following guide for further assistance with 3dcart's template structure: http://core.3dcart.com/
