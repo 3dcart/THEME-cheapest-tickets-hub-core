@@ -1,0 +1,309 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>[TITLE]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    [META]
+
+    <!--START: FRAME_RSSFEEDS -->
+    <link rel="alternate" type="application/rss+xml" title="Featured Items (RSS 2.0)" href="[store_url]/rss.asp?type=home" />
+    <link rel="alternate" type="application/rss+xml" title="Products On Sale (RSS 2.0)" href="[store_url]/rss.asp?type=onsale" />
+    <link rel="alternate" type="application/rss+xml" title="New Releases (RSS 2.0)" href="[store_url]/rss.asp?type=newreleases" />
+    <link rel="alternate" type="application/rss+xml" title="Best Sellers (RSS 2.0)" href="[store_url]/rss.asp?type=bestsellers" />
+    <link rel="alternate" type="application/rss+xml" title="Latest Blog Posts (RSS 2.0)" href="[store_url]/rss.asp?type=blog" />
+    <!--END: FRAME_RSSFEEDS -->
+
+	<!--START: page_styles-->
+	<link rel="stylesheet" href="assets/templates/common-core/lib/bootstrap/css/bootstrap.css" type="text/css" />
+	<link rel="StyleSheet" href="assets/templates/common-core/css/core.min.css" type="text/css" />
+	[page_styles]
+	<link rel="StyleSheet" href="assets/templates/[template]/css/default.css" type="text/css" />
+	<!--END: page_styles-->
+
+</head>
+<body class="[body_class]" data-currency="[currency_symbol]">
+
+    <section class="top-nav hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="useraccount clearfix">
+                        <ul class="clearfix">
+                            <!-START: username->
+                            <li><a href="/myaccount.asp"><span class="icon-pencil"></span> My Account</a></li>
+                            <li><a href="/logout.asp"><span class="icon-login"></span> Logout</a></li>
+                            <!-END: username->
+                            <!-START: login->
+                            <li><a href="/myaccount.asp"><span class="icon-login"></span> Login</a></li>
+                            <li><a href="/myaccount.asp"><span class="icon-pencil"></span> Register</a></li>
+                            <!-END: login->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 visible-xs text-left head-mobile-nav">
+                    <a href="#" id="mobile-menu-trigger">
+                        <span class="icon-menu"></span>
+                    </a>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <div class="logo">
+                        <!--START: global_header-->
+                        <h3 class="store-name">[storename]</h3>
+                        <h4 class="store-slogan">[storeslogan]</h4>
+                        <!--END: global_header-->
+                    </div>
+                </div>
+
+                <div class="col-xs-3 text-right visible-xs head-mobile-nav">
+                    <a href="/view_cart.asp">
+                        <span class="icon-basket"></span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-sm-5 col-xs-12 search-form-col">
+                    <!--START: FRAME_SEARCH-->
+                    <div id="searchBox" class="searchBox">
+                        <form method="get" name="searchForm" action="search.asp">
+                            <div class="search-form">
+                                <input type="text" id="searchlight" name="keyword" value="" placeholder="[frame_search]" class="search-text form-control" />
+                                <button type="submit" class="search-submit btn btn-default btn-inverse">
+									<img src="/assets/templates/[template]/images/lens.png" alt="Search" />
+								</button>
+                            </div>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                    <!--END: FRAME_SEARCH-->
+                </div>
+                <div class="col-md-3 col-sm-4 hidden-xs">
+					
+					<div id="welcome-msg" class="welcome-msg">
+						<!--START: login-->
+						Hello [username], <a href="myaccount.asp">Login?</a>
+						<!--END: login--> 
+						<!--START: username-->
+						Hello [username], <a href="logout.asp">Logout?</a>
+						<!--END: username-->
+					</div>
+					
+                    <!--START: shopping_cart-->
+					<div class="cart-area">
+						<a href="/view_cart.asp">
+							<img src="/assets/templates/[template]/images/cart.png" alt="" />
+							<div class="roundbg">
+								<span class="cartitems">[ITEMSINCART]</span>
+							</div>
+						</a>
+					</div>
+					
+                    <div class="minicart hidden">
+                        <a href="view_cart.asp" class="minicart-inner clearfix">
+                            <span class="icon-basket cart-icon"></span>
+                            <span class="cart-details">
+                                <span class="cart-title">Shopping Cart</span>
+                                <span class="cart-count"><span class="minicart-items">[ITEMSINCART]</span> Items - <span class="minicart-subtotal">[SUBTOTAL]</span></span>
+                            </span>
+                        </a>
+                    </div>
+                    <!--END: shopping_cart-->
+					<div id="floating-cart" class="floating-cart">
+                        <a href="view_cart.asp" class="minicart-inner clearfix">
+                            <span class="icon-basket cart-icon"></span>
+                            <span class="cart-details">
+                                <span class="minicart-items">[ITEMSINCART]</span> Items
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="navbar-wrapper hidden-xs">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+					<!--START: FRAME_MENU-->
+                    <nav id="menulinks-outer" class="menulinks">
+                        <ul id="menulinks" class="clearfix">
+                            <!--START: menuitems_view-->
+                            <!--START: TOP_LINK_FORMAT-->
+                            <li><a href="infopage.asp?page=[link_id]" class="menu" target="[link_target]">[link_name]</a></li>
+                            <!--END: TOP_LINK_FORMAT-->
+                            <!--END: menuitems_view-->
+                        </ul>
+                    </nav>
+                    <!--END: FRAME_MENU-->
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!--Get current page template-->
+    [page_content]
+    <!--/Get current page template-->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="visible-xs extrapages-shower">
+                        <a href="#extrapages" role="button" data-toggle="collapse" class="collapsed">Pages</a>
+                    </div>
+
+                    <!--START: FRAME_LINKS-->
+                    <ul id="extrapages" class="list-unstyled row extrapages">
+                        <!--START: LINKS-->
+                        <!--START: LINK_FORMAT-->
+                        <li class="col-sm-4"><a href="infopage.asp?page=[link_id]&extra=1" target="[link_target]" class="menu-bottom">[link_name]</a></li>
+                        <!--END: LINK_FORMAT-->
+                        <!--END: LINKS-->
+                    </ul>
+                    <!--END: FRAME_LINKS-->
+                </div>
+                <div class="col-md-6">
+                    <!--START: FRAME_MAILLIST-->
+                    <div class="mailist-box ajax-mailinglist" data-callfront="mailinglist_callfront" data-callback="mailinglist_response">
+                        <form method="post" name="mailing" action="mailing_list_ajax.asp">
+                            <h3>[frame_mailinglist]</h3>
+                            <div class="mailinglist-form clearfix">
+                                <input class="mailinglist-input form-control" type="text" name="email" placeholder="Email Address" autocomplete="off" />
+                                <button class="mailinglist-submit btn btn-default" type="submit" name="www">
+									<img src="assets/templates/[template]/images/submit-icon.png">
+                                    <!-- <span id="mailing-btn-txt">[mailinglist_button]</span>
+                                    <span id="mailing-btn-load" class="mailing-btn-load icon-spin2 animate-spin hidden"></span> -->
+                                </button>
+                            </div>
+                            <div class="clearfix maillist-options">
+                                <div class="subscribe"><input id="list_subscribe" type="radio" name="subscribe" value="1" checked="checked"> <label for="list_subscribe">Subscribe</label></div>
+                                <div class="subscribe"><input id="list_unsubscribe" type="radio" name="subscribe" value="0"> <label for="list_unsubscribe">Unsubscribe</label></div>
+                            </div>
+                        </form>
+                        <div id="mailinglist-response" class="mailinglist-response">
+                            <div class="mailinglist-error hidden"><span class="icon-attention"></span> <strong>Ooop!</strong> The email you entered isn't valid.</div>
+                            <div class="mailinglist-subscribed hidden"><span class="icon-ok"></span> <strong>WooHoo!</strong> You subscribed successfully.</div>
+                            <div class="mailinglist-unsubscribed hidden"><span class="icon-ok"></span> <strong>Ok!</strong> You're unsubscribed.</div>
+                        </div>
+                    </div>
+                    <!--END: FRAME_MAILLIST-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-social">
+                <div class="row">
+                    <div class="col-md-12 hidden-sm hidden-xs">
+						<!--START: global_footer-->
+						<div class="global-footer">[GLOBAL_FOOTER]</div>
+						<!--END: global_footer-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="col-sm-6">
+					<img src="assets/templates/[template]/images/cc.png">
+					<p>[frame_copyright1]</p>
+				</div>
+				<div class="col-sm-6 text-right">
+					<!--START: social_icons-->
+					<ul class="social-icons list-unstyled list-inline">
+
+						<li class="social-icons-label hidden">Stay Connected</li>
+
+						<!--START: social_link_facebook-->
+						<li><a href="[social_link_facebook_url]" class="facebook" target="_blank" title="Like Us on Facebook"><span class="icon-facebook"></span></a></li>
+						<!--END: social_link_facebook-->
+						<!--START: social_link_twitter-->
+						<li><a href="[social_link_twitter_url]" class="twitter" target="_blank" title="Follow Us on Twitter"><span class="icon-twitter"></span></a></li>
+						<!--END: social_link_twitter-->
+						<!--START: social_link_googleplus-->
+						<li><a href="[social_link_googleplus_url]" class="gplus" target="_blank" title="Follow Us on Google+"><span class="icon-gplus"></span></a></li>
+						<!--END: social_link_googleplus-->
+						<!--START: social_link_youTube-->
+						<li><a href="[social_link_youTube_url]" class="youtube" target="_blank" title="Subscribe to our Channel"><span class="icon-youtube"></span></a></li>
+						<!--END: social_link_youTube-->
+						<!--START: social_link_pinterest-->
+						<li><a href="[social_link_pinterest_url]" class="pinterest" target="_blank" title="Follow Us on Pinterest"><span class="icon-pinterest"></span></a></li>
+						<!--END: social_link_pinterest-->
+						<!--START: social_link_instagram-->
+						<li><a href="[social_link_instagram_url]" class="instagram" target="_blank" title="Follow Us on Instagram"><span class="icon-instagram"></span></a></li>
+						<!--END: social_link_instagram-->
+						<!--START: social_link_tumblr-->
+						<li><a href="[social_link_tumblr_url]" class="tumblr" target="_blank" title="Follow Us on Tumblr"><span class="icon-tumblr"></span></a></li>
+						<!--END: social_link_tumblr-->
+						<!--START: social_link_blog-->
+						<li><a href="[social_link_blog_url]" class="blog" target="_blank" title="Subscribe to our Blog"><span class="icon-rss"></span></a></li>
+						<!--END: social_link_blog-->
+					</ul>
+					<!--END: social_icons-->
+				</div>
+			</div>
+		</div>
+    </footer>
+
+    <nav id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <div class="mobile-menu-close">
+                <a href="#"></a>
+            </div>
+            <div class="mobile-menu-widget">
+                <h3>Menu Links</h3>
+                <div id="mobile-menulinks"></div>
+            </div>
+            <div class="mobile-menu-widget">
+                <h3>Categories</h3>
+                <div id="mobile-categories"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--START: quickview_modal-->
+    [quickview_modal]
+    <!--END: quickview_modal-->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link rel="StyleSheet" href="assets/templates/common-core/lib/fontello/css/fontello.min.css" type="text/css" />
+    <link rel="StyleSheet" href="assets/templates/common-core/lib/fontello/css/animation.css" type="text/css" />
+	
+	<!--START: page_scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/templates/common-core/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/templates/common-core/js/core.js"></script>
+    <script src="assets/templates/[template]/js/main.js"></script>
+	[page_scripts]
+	<!--END: page_scripts-->
+
+    <!--START: quicksearch-->
+    <link rel="stylesheet" href="assets/templates/common-core/quicksearch/quicksearch.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="assets/templates/common-core/quicksearch/jquery.quicksearch.js"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('#searchlight').searchlight('/search_quick.asp');
+        });
+    </script>
+    <!--END: quicksearch-->
+</body>
+</html>
