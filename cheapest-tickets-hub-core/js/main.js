@@ -82,7 +82,7 @@ function moveMenu() {
         respWidth = jQuery(window).width();
     }
 
-    if (respWidth < 767) {
+    if (respWidth < 1023) {
         jQuery('#menulinks').appendTo('#mobile-menulinks');
         jQuery('#categories').appendTo('#mobile-categories');
     }
@@ -96,7 +96,7 @@ jQuery(document).ready(function () {
 
     update_flyoutcart();
 
-    jQuery('#mobile-menu-trigger').click(function (e) {
+    jQuery('#mobile-menu-trigger, .navbar-toggle').click(function (e) {
         e.preventDefault();
 
         jQuery('#mobile-menu').show(0, function () {
