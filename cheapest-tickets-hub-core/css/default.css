@@ -14,7 +14,9 @@ body {
 footer {
 	flex-shrink: 0;
 }
-
+.homepage-blog-posts .post-image-container img {
+    height: 200px;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
     color: #000;
@@ -478,7 +480,8 @@ span.cartitems {
 #categories li a:hover, #modPrice ul a:hover{
 	background-color: #ccc;
 }
-#modNewReleases .widget-body{
+#modNewReleases .widget-body,
+#modTopSellers .widget-body{
     position: relative;
     padding: 0 15px;
 }
