@@ -157,9 +157,18 @@
         </div>
     </section>
 
-    <!--Get current page template-->
-    [page_content]
-    <!--/Get current page template-->
+    <div class="content-holder clearfix container">
+		<!--START: LEFT_BAR-->
+		<aside id="leftBar" class="col-md-3 hidden-sm hidden-xs">
+			[leftbar]
+		</aside>
+		<!--END: LEFT_BAR-->
+		<div class="col-md-9 midContent">
+			<!--Get current page template-->
+			[page_content]
+			<!--/Get current page template-->
+		</div>
+	</div>
 
     <!-- FOOTER -->
     <footer class="site-footer">

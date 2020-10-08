@@ -1,7 +1,7 @@
 /*
 ** Bootstrap over-rides
 */
-
+body:not(.home-page) #leftBar{display: none;}body:not(.home-page) .midContent{width:100% !important}
 body {
 	display: flex;
 	height: 100%;
@@ -873,8 +873,11 @@ span.freeshipping {
     margin: 15px 25px;
 }
 
-.home-section{
+/*.home-section{
 	margin: 10px auto; 
+}*/
+.content-holder {
+    margin-top: 10px;
 }
 .products-section {
     background-color: #fbfbfb;
