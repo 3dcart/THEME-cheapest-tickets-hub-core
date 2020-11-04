@@ -420,23 +420,25 @@ span.cart-count {
    color: #909;
 }
 .roundbg{
-    width: 24px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
     border: 1px solid #ff5832;
     border-radius: 28px;
     background: #ff5832;
     position: relative;
     top: -48px;
     left: 25px;
+	text-align: center;
+	line-height: 28px;
 }
 span.cartitems {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: normal;
-    line-height: 0;
+    line-height: 2;
     text-align: center;
     position: relative;
     top: 1px;
-    left: 7px;
+    left: 0px;
 	color: #fff;
 }
 .welcome-msg a{
