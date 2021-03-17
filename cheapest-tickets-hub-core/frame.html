@@ -97,15 +97,14 @@
 					</div>
 					
                     <!--START: shopping_cart-->
-					<div class="cart-area">
-						<a href="/view_cart.asp">
-							<img src="/assets/templates/[template]/images/cart.png" alt="" />
-							<div class="roundbg">
-								<span class="cartitems">[ITEMSINCART]</span>
-							</div>
-						</a>
-					</div>
-					
+                    <div class="cart-area">
+                        <a href="/view_cart.asp">
+                            <img src="/assets/templates/[template]/images/cart.png" alt="" />
+                            <div class="roundbg">
+                                <span class="cartitems"><span class="minicart-items">[ITEMSINCART]</span></span>
+                            </div>
+                        </a>
+                    </div>
                     <div class="minicart hidden">
                         <a href="view_cart.asp" class="minicart-inner clearfix">
                             <span class="icon-basket cart-icon"></span>
@@ -116,11 +115,12 @@
                         </a>
                     </div>
                     <!--END: shopping_cart-->
-					<div id="floating-cart" class="floating-cart">
+                    
+                    <div id="floating-cart" class="floating-cart">
                         <a href="view_cart.asp" class="minicart-inner clearfix">
-                            <span class="icon-basket cart-icon"></span>
+                            <span class="icon-basket cart-icon" role="presentation"></span>
                             <span class="cart-details">
-                                <span class="minicart-items">[ITEMSINCART]</span> Items
+                                <span class="minicart-items">[ITEMSINCART]</span> [frame_ITEMSINCART-text]
                             </span>
                         </a>
                     </div>
