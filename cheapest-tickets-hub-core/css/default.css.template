@@ -8,6 +8,21 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 }
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .page-content {
 	flex: 1 0 auto;
 }
@@ -868,11 +883,11 @@ span.freeshipping {
     background-color: #fbfbfb;
     padding: 30px 0;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     margin: 0;
     font-size: 24px;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     font-size: 24px;
     line-height: 1;
     font-weight: 600;
@@ -882,7 +897,7 @@ span.freeshipping {
     border-bottom: 1px solid #ececec;
     position: relative;
 }
-.products-section h2:after {
+.products-section h2:after,.products-section h1:after {
     content: "";
     width: 60px;
     height: 1px;

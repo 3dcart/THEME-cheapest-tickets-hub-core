@@ -6,7 +6,7 @@
 	<div class="widget-body">
 		<form name="mfg" id="mfg" method="get" action="search_groups.asp">
 			<div class="manf-select">
-				<select name="manf" onchange="this.form.submit();" class="form-control">
+				<select name="manf" onchange="this.form.submit();" class="form-control" aria-label="manufacturer form">
 					<option value="0" selected="selected">[frame_manufacturer]</option>
 					<!--START: manufacturer_format-->
 					<option value="[mfgid]">[manufacturer]</option>
@@ -20,8 +20,8 @@
 
 <!--START: FRAME_CATEGORY-->
 <div class="cat-menu sidebar-widget">
-	<div class="widget-header">[frame_categories]</div>
-	<ul id="categories" class="nav navbar-nav">
+	<h2 class="widget-header">[frame_categories]</h2>
+	<ul id="categories" class="nav navbar-nav" role="menu">
 		<!--START: CATEGORIES-->
 		<li class="[dropdown_class]">
 			<!--START: CATEGORY_FORMAT-->
@@ -56,17 +56,17 @@
 
 				<div class="price">
 					<!--START: ITEMPRICE-->
-					<span class="regular-price">[ITEMPRICE]</span>
+					<span class="regular-price" aria-label="regular price">[ITEMPRICE]</span>
 					<!--END: ITEMPRICE-->
 					<!--START: SALEPRICE-->
-					<del class="regular-price">[ITEMPRICE]</del>
-					<span class="sale-price">[ITEMSALEPRICE]</span>
+					<del class="regular-price" aria-label="regular price">[ITEMPRICE]</del>
+					<span class="sale-price" aria-label="sale price">[ITEMSALEPRICE]</span>
 					<!--END: SALEPRICE-->
 				</div>
 
 				<!--START: product_review_average-->
 				<div class="reviews">
-					<span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+					<span class="reviews-stars rating-[review_average]" role="presentation"></span> <span class="reviews-count" role="presentation">([review_count])</span>
 				</div>
 				<!--END: product_review_average-->
 			</div>
@@ -85,17 +85,17 @@
 
 						<div class="price">
 							<!--START: ITEMPRICE-->
-							<span class="regular-price">[ITEMPRICE]</span>
+							<span class="regular-price" aria-label="regular price">[ITEMPRICE]</span>
 							<!--END: ITEMPRICE-->
 							<!--START: SALEPRICE-->
-							<del class="regular-price">[ITEMPRICE]</del>
-							<span class="sale-price">[ITEMSALEPRICE]</span>
+							<del class="regular-price" aria-label="regular price">[ITEMPRICE]</del>
+							<span class="sale-price" aria-label="sale price">[ITEMSALEPRICE]</span>
 							<!--END: SALEPRICE-->
 						</div>
 
 						<!--START: product_review_average-->
 						<div class="reviews">
-							<span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+							<span class="reviews-stars rating-[review_average]" role="presentation"></span> <span class="reviews-count" role="presentation">([review_count])</span>
 						</div>
 						<!--END: product_review_average-->
 					</div>
@@ -131,23 +131,23 @@
 				
 						<!--START: freeshippingblock-->
 						<div class="status">
-							<span class="freeshipping">[freeshipping]</span>
+							<span class="freeshipping" aria-label="freeshipping">[freeshipping]</span>
 						</div>
 						<!--END: freeshippingblock-->
 						
 						<!--START: product_review_average-->
 						<div class="reviews">
-							<span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+							<span class="reviews-stars rating-[review_average]" role="presentation"></span> <span class="reviews-count" role="presentation">([review_count])</span>
 						</div>
 						<!--END: product_review_average-->
 
 						<div class="price">
 							<!--START: ITEMPRICE-->
-							<span class="regular-price">[ITEMPRICE]</span>
+							<span class="regular-price" aria-label="regular price">[ITEMPRICE]</span>
 							<!--END: ITEMPRICE-->
 							<!--START: SALEPRICE-->
-							<del class="regular-price">[ITEMPRICE]</del>
-							<span class="sale-price">[ITEMSALEPRICE]</span>
+							<del class="regular-price" aria-label="regular price">[ITEMPRICE]</del>
+							<span class="sale-price" aria-label="sale price">[ITEMSALEPRICE]</span>
 							<!--END: SALEPRICE-->
 						</div>
 					</div>
@@ -168,23 +168,23 @@
 				
 						<!--START: freeshippingblock-->
 						<div class="status">
-							<span class="freeshipping">[freeshipping]</span>
+							<span class="freeshipping" aria-label="freeshipping">[freeshipping]</span>
 						</div>
 						<!--END: freeshippingblock-->
 						
 						<!--START: product_review_average-->
 						<div class="col-xs-6 reviews">
-							<span class="reviews-stars rating-[review_average]"></span> <span class="reviews-count">([review_count])</span>
+							<span class="reviews-stars rating-[review_average]" role="presentation"></span> <span class="reviews-count" role="presentation">([review_count])</span>
 						</div>
 						<!--END: product_review_average-->
 
 						<div class="col-xs-6 price">
 							<!--START: ITEMPRICE-->
-							<span class="regular-price">[ITEMPRICE]</span>
+							<span class="regular-price" aria-label="regular price">[ITEMPRICE]</span>
 							<!--END: ITEMPRICE-->
 							<!--START: SALEPRICE-->
-							<del class="regular-price">[ITEMPRICE]</del>
-							<span class="sale-price">[ITEMSALEPRICE]</span>
+							<del class="regular-price" aria-label="regular price">[ITEMPRICE]</del>
+							<span class="sale-price" aria-label="sale price">[ITEMSALEPRICE]</span>
 							<!--END: SALEPRICE-->
 						</div>
 
