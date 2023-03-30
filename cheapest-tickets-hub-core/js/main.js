@@ -176,3 +176,6 @@ jQuery(function () {
         }
     });
 });
+setTimeout(function(){
+      $('.antiCls').css("visibility", "visible");
+  }, 800);
