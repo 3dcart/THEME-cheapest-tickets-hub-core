@@ -92,7 +92,7 @@ function moveMenu() {
         respWidth = jQuery(window).width();
     }
 
-    if (respWidth < 1023) {
+    if (respWidth < 1024) {
         jQuery('#menulinks').appendTo('#mobile-menulinks');
         jQuery('#categories').appendTo('#mobile-categories');
     }
@@ -176,3 +176,6 @@ jQuery(function () {
         }
     });
 });
+setTimeout(function(){
+      $('.antiCls').css("visibility", "visible");
+  }, 800);

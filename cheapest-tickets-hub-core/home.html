@@ -6,7 +6,7 @@
 			<div class="homeCarousel flexslider" data-animation="[hc_effect]" data-slideshowspeed="[hc_delay]">
 				<ul class="slides">
 					<!--START: carousel-->
-					<li><a href="[link]"><img src="[image]" alt="banner" /></a></li>
+					<li><a href="[link]"><img src="/cdn-cgi/image/format=auto/[image]" alt="banner" class="img-responsive" width="850" height="450" /></a></li>
 					<!--END: carousel-->
 				</ul>
 			</div>
@@ -49,7 +49,7 @@
 					<div class="post-image">
 						<div class="post-image-container">
 							<a href="[pagename]" title="[subject]">  
-								<img src="[post_image]" alt="[subject]" class="img-responsive" />
+								<img src="/cdn-cgi/image/format=auto/[post_image]" alt="[subject]" class="img-responsive" />
 							</a>
 						</div>
 					</div>			            
@@ -128,6 +128,7 @@
 			});
 			
 			setTimeout(function () {
+
 				window.dispatchEvent(new Event('resize'));
 			}, 100);
 		});
@@ -152,6 +153,19 @@
 <!--END: template_scripts-->
 
 <!--START: template_styles-->
-<link rel="stylesheet" href="/assets/templates/common-core/lib/flexslider/flexslider.css" type="text/css" media="screen" />
-<link href="assets/templates/common-core/lib/contentbuilder/minimalist-blocks/content.min.css" rel="stylesheet" type="text/css" />
+<link
+    rel="preload stylesheet"
+    href="/assets/templates/common-core/lib/flexslider/flexslider.css"
+    as="style"
+    media="screen"
+    onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+    <link
+        href="/assets/templates/common-core/lib/flexslider/flexslider.css"
+        rel="stylesheet"
+        type="text/css"
+        media="screen"
+    />
+</noscript>
 <!--END: template_styles-->
