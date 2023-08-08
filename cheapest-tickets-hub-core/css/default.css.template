@@ -505,7 +505,6 @@ span.cartitems {
     padding: 0 15px;
 }
 #home .products-section .header-specials{
-    float: left;
     border: none;
     width: 100%;
     display: block;
@@ -514,6 +513,7 @@ span.cartitems {
 }
 #home .products-section .header-specials span{
     line-height: 40px;
+    display: inline-block;
     text-transform: none;
     font-size: 18px;
     font-weight: normal;
