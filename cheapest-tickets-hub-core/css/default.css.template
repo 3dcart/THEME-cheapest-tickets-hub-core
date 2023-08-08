@@ -512,8 +512,8 @@ span.cartitems {
     margin: 0 0 10px;
 }
 #home .products-section .header-specials span{
-    display: inline-block;
     line-height: 40px;
+    display: inline-block;
     text-transform: none;
     font-size: 18px;
     font-weight: normal;
