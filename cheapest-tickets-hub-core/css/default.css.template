@@ -518,12 +518,11 @@ span.cartitems {
     font-size: 18px;
     font-weight: normal;
     padding: 0 20px 0 20px;
-    background: #[btn_color];
-    color: #[btn_text_color];
+    background: #[btn2_color];
+    color: #[btn2_text_color];
     margin: 0;
     max-width: 680px;
     text-align: left;
-    float: left;
     letter-spacing: 0.05em;
     position: relative;
 }
