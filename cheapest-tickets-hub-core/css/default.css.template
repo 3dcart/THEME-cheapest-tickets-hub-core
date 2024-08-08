@@ -2,7 +2,8 @@
 ** Bootstrap over-rides
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
-body:not(.home-page) #leftBar{display: none;}body:not(.home-page) .midContent{width:100% !important}
+body:not(.home-page):not(.category-page) #leftBar{display: none;}body:not(.home-page) .midContent{width:100% !important}
+.category-page #page-content > #leftBar{display: none;}
 body {
 	display: flex;
 	height: 100%;
